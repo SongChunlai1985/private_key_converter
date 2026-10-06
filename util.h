@@ -6,12 +6,12 @@
 #define  UTIL_H
 #include <algorithm>
 #include <numeric>
-#include <boost/foreach.hpp>
-#include <boost/lexical_cast.hpp>
-#include <boost/tuple/tuple.hpp>
-#include <boost/tuple/tuple_comparison.hpp>
-#include <boost/tuple/tuple_io.hpp>
-#include <boost/array.hpp>
+//#include <boost/foreach.hpp>
+//#include <boost/lexical_cast.hpp>
+//#include <boost/tuple/tuple.hpp>
+//#include <boost/tuple/tuple_comparison.hpp>
+//#include <boost/tuple/tuple_io.hpp>
+//#include <boost/array.hpp>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stddef.h>
@@ -27,10 +27,10 @@
 #include <wx/clipbrd.h>
 #include <wx/snglinst.h>
 */
-#include <boost/thread/condition_variable.hpp>
-#include <boost/thread/locks.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/recursive_mutex.hpp>
+//#include <boost/thread/condition_variable.hpp>
+//#include <boost/thread/locks.hpp>
+//#include <boost/thread/mutex.hpp>
+//#include <boost/thread/recursive_mutex.hpp>
 
 #ifdef __GNUC__
 #include <semaphore.h>

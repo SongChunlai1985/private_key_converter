@@ -33,11 +33,11 @@ CONFIG += lrelease
 CONFIG += embed_translations
 
 INCLUDEPATH += \
-/usr/local/openssl_0_9_8/include
+/usr/local/ssl/include
 
 LIBS += \
-/usr/local/openssl_0_9_8/lib/libssl.a \
-/usr/local/openssl_0_9_8/lib/libcrypto.a \
+/usr/local/ssl/lib/libssl.a \
+/usr/local/ssl/lib/libcrypto.a \
 /usr/local/lib/libsecp256k1.a
 
 # Default rules for deployment.

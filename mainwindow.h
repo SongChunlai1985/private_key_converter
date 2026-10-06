@@ -90,5 +90,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QFile fw;
+    int n = 0;
 };
 #endif // MAINWINDOW_H

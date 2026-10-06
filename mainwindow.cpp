@@ -248,6 +248,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->sPublicKeyC->setText(PubkeyCompress(sPubKeyR));
     ui->sPublicKey->setText(sPubKeyR);
+
+   fw.setFileName("/home/song/wif.log");
+   fw.open(QIODevice::Append);
 }
 
 MainWindow::~MainWindow()
@@ -349,6 +352,7 @@ void MainWindow::on_wIFDecode_textChanged()
            <<"\n Salt:"<<ui->salt->toPlainText()
           <<"\n WIF:"<<WIF
          <<"\n";
+    fw.write(WIF.toLatin1() + "\n");
     if(user != 9)ui->wIF->setText(WIF);
 }
 
@@ -419,6 +423,7 @@ void MainWindow::on_publicKey_textChanged()
     QString MasterPublicKey = ui->publicKey->toPlainText();
     QString PublicKeyCOMPRESSED = PubkeyCompress(MasterPublicKey);
     QString Address = PubKeyToAddress(MasterPublicKey);
+    fw.write(QString::number(n++).toLatin1() + " " + Address.toLatin1() + "\n\n");
     ui->publicKeyCOMPRESSED->setText(PublicKeyCOMPRESSED);
     ui->addr->setText(Address);
 }
